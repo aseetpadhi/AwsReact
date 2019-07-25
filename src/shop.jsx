@@ -10,7 +10,8 @@ class Shop extends Component {
     }
   
     componentDidMount() {
-      fetch("https://jsonplaceholder.typicode.com/todos/1")
+    //  fetch("https://jsonplaceholder.typicode.com/todos/1")
+    fetch("http://contact4grocery.us-east-2.elasticbeanstalk.com/shops")
         .then(res => res.json())
         .then(
           (result) => {
